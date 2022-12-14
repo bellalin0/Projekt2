@@ -190,26 +190,32 @@ img {
     background-image: url(images/MacDemarco_levy.jpg);
 }
 
+/*anecdote boxes (not empty) SALAD DAYS / HERE COMES THE COWBOY*/
+.box {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/*anecdotes images*/
 .image {
-    /*display: flex;
-    align-items: flex-end;*/
+    display: flex;
+    align-items: flex-end; /*text anecdote img*/
     text-shadow: 0 0 4px black;
     background-position: center;
     background-size: cover;
+    padding: 20px;
 }
-
 
 /*anecdote boxes (not empty) SALAD DAYS*/
 #salad_days .box {
     background-color: #FFDDC2;
-    padding: 20px;
     color: #374663;
 }
 
 /*anecdote boxes (not empty) HERE COMES THE COWBOY*/
 #here_comes_the_cowboy .box {
     background-color: #1C473A;
-    padding: 30px;
     color: #dfab63;
 }
 
@@ -272,3 +278,28 @@ img {
     color: white;
     width: 40%;
 }
+
+
+@media (min-width: 1111px) {
+    
+    footer {
+        font-size: 13px;
+    }
+    
+    header > h1 {
+        font-size: 67px;
+    }
+    
+    div > h1 {
+        font-size: 33px;
+    }
+    
+    nav > div {
+        font-size: 17px;
+    }
+
+    main {
+        font-size: 11px;
+    }
+}
+
