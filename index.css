@@ -1,0 +1,274 @@
+@font-face {
+    font-family: "RockSalt";
+    src: url(font/Rock_Salt/RockSalt-Regular.ttf)
+}
+
+body {
+    background-image: url("images/MacDemarco_background_image.jpg");
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*main container (allt)*/
+body > div {
+    background-color: rgba(0, 0, 0, 0.531);
+    border-radius: 20px;
+
+    margin: 150px 50px;
+}
+
+
+footer {
+    padding: 100px 0 20px 20px;
+    color: white;
+    font-size: 1.2vw;
+}
+
+
+/*main title*/
+header > h1 {
+    color: white;
+    padding: 20px;
+    font-family: RockSalt;
+    font-size: 6vw;
+    margin: 0;
+}    
+
+/*sub titles*/
+div > h1 {
+    font-size: 3vw;
+    font-family: RockSalt;
+    margin: 0;
+}
+
+
+/*navigation container*/
+nav {
+    display: flex;
+    margin: 10px;
+    margin-bottom: 70px;  
+}
+
+/*navigation child*/
+nav > div {
+    background-color: rgba(255, 255, 255, 0.535);
+    font-size: 1.5vw;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 20px;
+
+    width: 100%;
+    justify-content: stretch;
+    text-align: center;
+}
+
+/*marked navigation*/
+.marked {
+    border: 1px solid rgb(255, 255, 255);
+    font-weight: bold;
+    box-shadow: 0 0 8px white;
+}
+
+/*unmarked navigation*/
+.unmarked:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.495);
+    color: white;
+}
+
+
+/*container innehåll*/
+main {
+    color: white;
+    font-size: 1vw;
+}
+
+
+/*lista*/
+li {
+    list-style: none;
+}
+
+
+/*innehåll containers (separat)*/
+.best {
+    background-color: rgba(0, 0, 0, 0.463);
+    border-radius: 20px;
+    border: 0.5px solid white;
+    
+    padding: 0 20px;
+    margin: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);    
+}
+
+
+/*cover bilder*/
+img {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+/*cover bilder container*/
+.cover {
+    grid-column: 4 / span 2;
+    position: relative;
+    
+}
+
+/*front img album cover*/
+.show_hover {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+    position: absolute;
+    right: 0;
+}
+
+/*back img album cover*/
+.show_hover:hover {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+
+
+/*top songs / demo exlusive (båda)*/
+.song_list {
+    display: flex;
+    grid-column: 4 / span 2; 
+    
+    margin-top: 10px;
+    gap: 15px;
+}  
+
+/*top songs / demo exlusive (separat)*/
+.top_demo {
+    background-color: #374663;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 0 0 20px 20px;
+}
+
+/*top songs / demo exlusive SALAD DAYS*/
+#salad_days .top_demo {
+    color: #FFDDC2;
+}
+
+/*top songs / demo exlusive HERE COMES THE COWBOY*/
+#here_comes_the_cowboy .top_demo {
+    background-color: #dfab63;
+    color:#1C473A;
+}
+
+/*main content*/
+.album_data {
+    grid-column: 1 / span 3;
+}
+
+/*anecdotes*/
+.anecdotes {
+    display: flex;
+    grid-column: 1 / span 5;
+    padding: 0;
+    gap: 10px;
+}
+
+
+/*anecdote images*/
+#salad_days .image {
+    background-image: url(images/MacDemarco_demo.jpg);
+}
+
+#here_comes_the_cowboy .image {
+    background-image: url(images/MacDemarco_levy.jpg);
+}
+
+.image {
+    /*display: flex;
+    align-items: flex-end;*/
+    text-shadow: 0 0 4px black;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*anecdote boxes (not empty) SALAD DAYS*/
+#salad_days .box {
+    background-color: #FFDDC2;
+    padding: 20px;
+    color: #374663;
+}
+
+/*anecdote boxes (not empty) HERE COMES THE COWBOY*/
+#here_comes_the_cowboy .box {
+    background-color: #1C473A;
+    padding: 30px;
+    color: #dfab63;
+}
+
+/*anecdote one SALAD DAYS*/
+#salad_days .top_right_90 {
+    border-radius: 20px 0 20px 20px;
+    width: 25%;
+ }
+
+/*anecdote empty SALAD DAYS*/
+.empty {
+    width: 25%;
+}
+
+/*anecdote two SALAD DAYS*/
+#salad_days .two_wide {
+    border-radius: 20px 20px 20px 0;
+    width: 40%;
+}
+
+/*anecdote three SALAD DAYS*/
+#salad_days .top_left_90 {
+    border-radius: 0 20px 20px 20px;
+    width: 25%;
+    color: white;
+ }
+
+/*anecdote four SALAD DAYS*/
+#salad_days .bottom_right_90 {
+    border-radius: 20px 20px 0 20px;
+    width: 25%;
+}
+
+/*anecdotes tablet / phone empty SALAD DAYS / HERE COMES THE COWBOY*/
+.tablet_empty,
+.phone_empty {
+    display: none;
+}
+
+/*anecdote one HERE COMES THE COWBOY*/
+#here_comes_the_cowboy .bottom_left_90 {
+    border-radius: 20px 20px 20px 0;
+    width: 40%;
+}
+
+/*anecdote two / three HERE COMES THE COWBOY*/
+#here_comes_the_cowboy .top_left_90 {
+    border-radius: 0 20px 20px 20px;
+    width: 25%;
+}
+
+/*anecdote four HERE COMES THE COWBOY*/
+#here_comes_the_cowboy .bottom_right_90 {
+    border-radius: 20px 20px 0 20px;
+    width: 25%;
+}
+
+/*anecdote 3 HERE COMES THE COWBOY*/
+#here_comes_the_cowboy .image_2 {
+    color: white;
+    width: 40%;
+}
