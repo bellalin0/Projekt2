@@ -92,7 +92,7 @@ li {
 }
 
 
-/*innehåll containers (separat)*/
+/*innehåll containers (separat) SALAD DAYS / HERE COMES THE COWBOY*/
 .best {
     background-color: rgba(0, 0, 0, 0.463);
     border-radius: 20px;
@@ -555,22 +555,28 @@ img {
     #salad_days .bottom_right_90,
     #here_comes_the_cowboy .top_left_90BOX,
     #here_comes_the_cowboy .bottom_right_90 {
-        width: 23%;
+        width: 21%;
     }
 
     #salad_days .bottom_left_90,
     #here_comes_the_cowboy .bottom_left_90,
     #here_comes_the_cowboy .top_left_90IMG {
-        width: 50%;
+        width: 54%;
     }    
+
+
+    .phone_empty {
+        display: block;
+        width: 15%;
+    }
 
     .empty {
         display: none;
     }
 
-    .phone_empty {
+    .tablet_empty {
         display: block;
-        width: 23%;
+        width: 30%;
     }
 
 
@@ -587,6 +593,7 @@ img {
     /*anecdotes*/
     .anecdotes {
         font-size: 2vw;
+        gap: 5px 10px;
     }
 
     footer {
